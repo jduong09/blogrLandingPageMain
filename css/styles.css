@@ -1,0 +1,17 @@
+body {
+  min-height: 100vh;
+}
+/* Mobile First Design */
+
+/* Header */
+header {
+  position: absolute;
+  top: 0;
+  display: flex;
+}
+/* Main */
+main {
+  width: 100%;
+  height: 100vh;
+}
+/* Footer */
