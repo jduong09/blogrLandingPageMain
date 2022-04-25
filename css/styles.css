@@ -1,3 +1,7 @@
+/*
+  font-family: 'Overpass', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+*/
 body {
   min-height: 100vh;
 }
@@ -5,13 +9,165 @@ body {
 
 /* Header */
 header {
+  width: 100%;
   position: absolute;
   top: 0;
+  left: 0;
   display: flex;
+  justify-content: space-between;
+  padding: 3rem 1rem;
+}
+
+#logo {
+  width: 101px;
+  height: auto;
+}
+
+#menu-hamburger {
+  width: 32px;
+  height: auto;
+}
+
+.menu-list {
+  display: none;
+}
+
+.menu-sign-in {
+  display: none;
 }
 /* Main */
 main {
   width: 100%;
   height: 100vh;
+  text-align: center;
+}
+
+/* Main Header: CTA */
+#main-header-wrapper{
+  background: linear-gradient(hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+  border-bottom-left-radius: 5rem;
+}
+
+.main-header {
+  background-image: url('../images/bg-pattern-intro-mobile.svg');
+  background-size: 320%;
+  background-repeat: no-repeat;
+  background-position: top 33% left 37%;
+  border-bottom-left-radius: 5rem;
+  font-family: 'Ubuntu', sans-serif;
+  color: hsl(0, 0%, 100%);
+}
+
+.main-header > h2, .main-header > div {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main-header > h2 {
+  padding-top: 12rem;
+  font-size: 2rem;
+  padding-bottom: 1.5rem;
+  font-weight: 400;
+}
+
+#main-header-quote {
+  font-family: 'Overpass', sans-serif;
+  font-weight: 300;
+}
+
+.main-header > div:last-child {
+  padding-top: 3rem;
+  padding-bottom: 8rem;
+}
+
+#main-header-btns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-header input {
+  background-color: transparent;
+  color: hsl(0, 0%, 100%);
+  border: 1px solid hsl(0, 0%, 100%);
+  padding: .75rem 1.25rem;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+#btn-main-header-first, #btn-main-header-second:hover {
+  background-color: white;
+  color: hsl(356, 100%, 66%);
+}
+
+#btn-main-header-first:hover {
+  background-color: hsl(355, 100%, 74%);
+  border-color: transparent;
+  color: hsl(0, 0%, 100%);
+}
+
+/* Main Div 1: Designed For the future */
+.main-info-container {
+  width: 100%;
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+  font-family: 'Overpass', sans-serif;
+}
+
+.main-info-container > h2 {
+  margin-bottom: 3rem;
+}
+
+.main-info-container > h2, .main-info-section > h3 {
+  font-size: 1.75rem;
+  color: hsl(208, 49%, 24%);
+  font-weight: 600;
+}
+
+.main-info-section {
+  width: 80%;
+  margin: 3rem auto;
+}
+
+.main-info-section > h3 {
+  margin-bottom: .75rem;
+}
+
+.main-info-section > div {
+  line-height: 1.5rem;
+}
+
+#main-info-sidenote-wrapper {
+  background: linear-gradient(hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+}
+
+#main-info-sidenote {
+  background-image: url('../images/bg-pattern-circles.svg');
+  background-repeat: no-repeat;
+  background-position: top 100% left 50%;
+  background-size: 150%;
+  color: hsl(0, 0%, 100%);
+  position: relative;
+  font-family: 'Overpass', sans-serif;
+  padding-top: 15rem;
+  padding-bottom: 7.5rem;
+}
+
+#main-info-sidenote > img {
+  position: absolute;
+  top: -50%;
+}
+
+#main-info-sidenote > h2 {
+  padding-bottom: 1.5rem;
+  font-size: 2.25rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#main-info-sidenote > div {
+  width: 80%;
+  margin: 0 auto;
+  line-height: 1.5rem;
 }
 /* Footer */
