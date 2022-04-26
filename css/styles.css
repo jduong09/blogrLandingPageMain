@@ -20,21 +20,101 @@ header {
 
 #logo {
   width: 101px;
-  height: auto;
 }
 
 #menu-hamburger {
   width: 32px;
-  height: auto;
 }
 
-.menu-list {
+#icon-close {
+  width: 26px;
+}
+
+.hide {
   display: none;
 }
 
-.menu-sign-in {
-  display: none;
+#menu-mobile {
+  position: absolute;
+  top: 80%;
+  right: 60%;
+  width: 90%;
+  transform: translateX(60%);
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 5px;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+  text-align: center;
+  padding: 2rem 0;
+  font-family: 'Overpass', sans-serif;
 }
+
+#menu-list > li, #menu-sign-in > div {
+  margin-bottom: 1.5rem;
+}
+
+.menu-heading > h2, .menu-heading > img {
+  display: inline;
+}
+
+.menu-heading > h2 {
+  color: hsl(208, 49%, 24%);
+  font-weight: 600;
+}
+
+.icon-arrow {
+  width: 10px;
+  cursor: pointer;
+}
+
+.sublist-opened {
+  transform: rotate(180deg);
+}
+
+#menu-list {
+  width: 90%;
+  margin: 0 auto;
+  border-bottom: 1px solid hsl(0, 0%, 92%);
+}
+
+.menu-sublist {
+  width: 100%;
+  margin: 1.5rem auto 0 auto;
+  padding: 1rem;
+  background-color: hsl(0, 0%, 92%);
+  border-radius: 5px;
+  color: hsl(208, 49%, 24%);
+}
+
+.menu-sublist > li {
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.menu-sublist > li:last-child {
+  margin-bottom: 0;
+}
+
+#menu-sign-in {
+  margin-top: 1.5rem;
+  color: hsl(208, 49%, 24%);
+  font-weight: 600;
+}
+
+#menu-sign-in > li {
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+}
+
+#menu-sign-in-btn {
+  color: hsl(0, 0%, 100%);
+  border: 1px solid hsl(0, 0%, 100%);
+  background: linear-gradient(0.25turn, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
 /* Main */
 main {
   width: 100%;
@@ -204,4 +284,6 @@ footer {
   cursor: pointer;
 }
 
-
+.footer-sublist > li:hover {
+  text-decoration: underline;
+}

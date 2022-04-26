@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="js/menu.js"></script>
   <title>Frontend Mentor | [Blogr]</title>
 </head>
 <body>
@@ -17,10 +18,15 @@
     <h1><img id="logo" src="images/logo.svg" alt="blogr logo" /></h1>
     <div>
       <img id="menu-hamburger" src="images/icon-hamburger.svg" alt="hamburger nav image" />
-        <ul class="menu-list">
+      <img id="icon-close" class="hide" src="images/icon-close.svg" alt="icon-close" />
+      <div id="menu-mobile" class="hide">
+        <ul id="menu-list">
           <li>
-            <div>Product</div>
-            <ul>
+            <div class="menu-heading">
+              <h2>Product</h2>
+              <img class="icon-arrow sublist-closed" src="images/icon-arrow-dark.svg" alt="icon-arrow" aria-label="arrow-sublist-product" />
+            </div>
+            <ul id="sublist-product" class="menu-sublist hide">
               <li>Overview</li>
               <li>Pricing</li>
               <li>Marketplace</li>
@@ -29,8 +35,11 @@
             </ul>
           </li>
           <li>
-            <div>Product</div>
-            <ul>
+            <div class="menu-heading">
+              <h2>Company</h2>
+              <img class="icon-arrow sublist-closed" src="images/icon-arrow-dark.svg" alt="icon-arrow" aria-label="arrow-sublist-company" />
+            </div>
+            <ul id="sublist-company" class="menu-sublist hide">
               <li>About</li>
               <li>Team</li>
               <li>Blog</li>
@@ -38,17 +47,21 @@
             </ul>
           </li>
           <li>
-            <div>Connect</div>
-            <ul>
+            <div class="menu-heading">
+              <h2>Connect</h2>
+              <img class="icon-arrow sublist-closed" src="images/icon-arrow-dark.svg" alt="icon-arrow" aria-label="arrow-sublist-connect" />
+            </div>
+            <ul id="sublist-connect" class="menu-sublist hide">
               <li>Contact</li>
               <li>Newsletter</li>
               <li>LinkedIn</li>
             </ul>
           </li>
         </ul>
-      <div class="menu-sign-in">
-        <div>Login</div>
-        <div>Sign Up</div>
+        <ul id="menu-sign-in">
+          <li>Login</li>
+          <li><input id="menu-sign-in-btn" type="button" value="Sign Up" /></li>
+        </ul>
       </div>
     </div>
   </header>
