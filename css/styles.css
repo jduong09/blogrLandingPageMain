@@ -48,7 +48,7 @@ header {
   font-family: 'Overpass', sans-serif;
 }
 
-#menu-list > li, #menu-sign-in > div {
+#menu-list > li, #menu-sign-in > li {
   margin-bottom: 1.5rem;
 }
 
@@ -290,4 +290,96 @@ footer {
 
 .footer-sublist > li:hover {
   text-decoration: underline;
+}
+
+@media (min-width: 1440px) {
+  /* Desktop View */
+  /* Header */
+  header {
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  header > h1 {
+    width: 10%;
+  }
+
+  header > div {
+    width: 90%;
+  }
+
+  #menu-hamburger {
+    display: none;
+  }
+
+  #icon-close {
+    display: none;
+  }
+
+  #menu-mobile {
+    display: flex;
+    position: inherit;
+    top: inherit;
+    right: inherit;
+    width: auto;
+    transform: inherit;
+    background-color: transparent;
+    border-radius: inherit;
+    box-shadow: none;
+    padding: 0;
+    text-align: inherit;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  #menu-list, #menu-sign-in {
+    display: flex;
+    align-items: center;
+  }
+
+  #menu-list {
+    border: none;
+  }
+
+  #menu-list > li {
+    margin-bottom: 0;
+    position: relative;
+  }
+
+  #menu-list > li:not(:first-child) {
+    margin-left: 1.5rem;
+  }
+  
+  .menu-heading > h2 {
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+  }
+  
+  .icon-arrow {
+    content: url('../images/icon-arrow-light.svg');
+  }
+  
+  .menu-sublist {
+    position: absolute;
+    width: auto;
+  }
+
+  #menu-sign-in {
+    margin: 0;
+    color: hsl(0, 0%, 100%);
+  }
+
+  #menu-sign-in > li {
+    margin: 0;
+  }
+
+  #menu-sign-in > li {
+    margin-left: 1.5rem;
+  }
+  /* Main */
+
+  /* Footer */
+
 }
