@@ -113,7 +113,7 @@ header {
   color: hsl(0, 0%, 100%);
   border: 1px solid hsl(0, 0%, 100%);
   background: linear-gradient(0.25turn, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
-  padding: 1rem 3rem;
+  padding: .75rem 2.5rem;
   border-radius: 2rem;
   font-weight: 600;
   cursor: pointer;
@@ -156,7 +156,7 @@ main {
 
 #main-header-quote {
   font-family: 'Overpass', sans-serif;
-  font-weight: 300;
+  font-weight: 600;
 }
 
 .main-header > div:last-child {
@@ -208,8 +208,9 @@ main {
 }
 
 .main-info-section {
-  width: 79%;
+  width: 70%;
   margin: 3rem auto;
+  text-align: left;
 }
 
 .main-info-section > h3 {
@@ -305,6 +306,7 @@ footer {
   
   header > h1 {
     width: 10%;
+    margin-right: 3rem;
   }
 
   header > div {
@@ -378,8 +380,149 @@ footer {
   #menu-sign-in > li {
     margin-left: 1.5rem;
   }
+
+  #menu-sign-in-btn {
+    color: hsl(353, 100%, 62%);
+    background: none;
+    background-color: hsl(0, 0%, 100%);
+  }
   /* Main */
+  #main-header-wrapper {
+    background: linear-gradient(.25turn, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+  }
+  .main-header {
+    background-image: url('../images/bg-pattern-intro-desktop.svg');
+    background-size: 225%;
+    background-position: top 52% left 27%;
+    font-family: 'Overpass', sans-serif;
+  }
+
+  .main-header > h2 {
+    font-size: 4rem;
+  }
+
+  #main-header-quote {
+    font-size: 1.25rem;
+  }
+
+  #main-header-btns {
+    width: 20%;
+  }
+  /* Designed for the future */
+  .main-info-container {
+    margin-top: 9rem;
+    display: grid;
+    grid-template-rows: min-content 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .main-info-container > h2 {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+  }
+
+  #app-graph {
+    content: url('../images/illustration-editor-desktop.svg');
+    width: 115%;
+    grid-row: 2 / 4;
+    grid-column: 2 / 3;
+    position: absolute;
+    right: -33%;
+    top: -30%;
+  }
+
+  #editor-section {
+    grid-row: 2 / 3;
+    grid-column: 1/ 2;
+  }
+
+  #management-section {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+  }
+
+  /* State of the Art Infrastructure */
+  #main-info-sidenote {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    background-position: top 80% left -50%;
+    background-size: 70%;
+    margin-top: 9rem;
+  }
+
+  #main-info-sidenote > img {
+    top: -15%;
+    left: 10%;
+    width: auto;
+  }
+
+  #main-info-sidenote > h2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: left;
+    margin: 0;
+    width: 70%;
+  }
+
+  #main-info-sidenote > div {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: left;
+    margin: 0;
+    width: 70%;
+    font-family: 'Overpass', sans-serif;
+  }
+
+  .main-info-container:last-of-type {
+    grid-template-rows: 1fr 1fr;
+    margin: 15rem 0;
+  }
+
+  #image-mobile {
+    content: url('../images/illustration-laptop-desktop.svg');
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    width: 115%;
+    position: absolute;
+    left: -235px;
+    top: -175px;
+  }
+
+  #free-section {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    margin: 0;
+  }
+
+  #tooling-section {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    margin: 0;
+    align-self: end;
+  }
 
   /* Footer */
+  footer {
+    text-align: start;
+    display: flex;
+  }
 
+  #footer-logo {
+    height: 100%;
+    width: auto;
+    margin: 0 0 0 8rem;
+  }
+
+  .footer-list {
+    display: flex;
+    padding: 0;
+    width: 85%;
+    justify-content: space-around;
+    margin-right: 8rem;
+  }
 }
